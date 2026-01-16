@@ -99,6 +99,17 @@ Stellara is guided by a few simple ideas:
 
 ## 🗺️ Release History
 
+### 🚀 v2.1.1 — January 16, 2026  
+**Critical Authentication Bug Fixes**
+- **Registration Endpoint Simplification**: Removed manual profile insertion logic, now uses only `supabase.auth.signUp()` with automatic database trigger-based profile creation
+- **Login Endpoint Rewrite**: Completely refactored to use only `supabase.auth.signInWithPassword()` - eliminated legacy authentication logic, password hashing, and manual token generation
+- **Architecture Compliance**: Enforced Supabase Auth best practices - user IDs generated only by Supabase, profiles created only by database triggers
+- **Frontend Submission Guards**: Added double submission prevention for both login and registration forms using `isLoggingIn` and `isSubmitting` flags
+- **Session Management**: Standardized session handling with proper access_token and refresh_token storage
+- **Data Flow Optimization**: Simplified authentication flow to eliminate race conditions and 401 Unauthorized errors
+
+---
+
 ### 🚀 v2.1.0 — January 15, 2026  
 **Refinement & Stability**
 - Improved performance and responsiveness  
