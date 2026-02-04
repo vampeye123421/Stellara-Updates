@@ -1,4 +1,4 @@
-# 🌌 Stellara  
+# 🌌 Stellara
 *A modern astronomy community & exploration platform*
 
 ![Stellara Hero](https://science.nasa.gov/wp-content/uploads/2023/06/webb-flickr-52259221868-30e1c78f0c-4k-jpg.webp)
@@ -7,152 +7,84 @@
 
 ---
 
-## ✨ What is Stellara?
+## ✨ What Is Stellara?
 
-**Stellara** is a modern, science-focused astronomy platform built for people who love space.
+**Stellara** is a modern, science‑focused astronomy platform built for people who love space.
 
-It brings together **real astronomical data**, **clean and calm design**, and **community interaction** in one place.  
-Stellara is designed to feel like a **digital observatory**, not a social network.
+It brings together **real astronomical data**, a **clean and calm UI**, and **community interaction** in one place. Stellara is designed to feel like a **digital observatory**, not a social network.
 
-It’s made for:
-- Curious beginners  
-- Amateur astronomers  
-- Astrophotography enthusiasts  
-- Anyone who looks at the night sky and wants answers  
+Built for:
+- Curious beginners
+- Amateur astronomers
+- Astrophotography enthusiasts
+- Anyone who looks up and wants answers
 
 ---
 
 ## 🌠 Platform Overview
 
-![Stellara Homepage](https://postimg.cc/phYRw8fc)
-
 Stellara focuses on:
-- clarity over clutter  
-- calm over noise  
-- science over hype  
+- Clarity over clutter
+- Calm over noise
+- Science over hype
 
 Everything is built to let the universe speak for itself.
 
 ---
 
-## 🔭 Core Features
+## 🔭 Current Features
 
-### 🛰️ Real-Time ISS Tracking
+### 🧭 Explore & Learn
+- **NASA APOD** (Astronomy Picture of the Day) with clear explanations.
+- **Astronomical events**: upcoming meteor showers, eclipses, and sky events.
+- **ISS location tracker** with live map and telemetry.
+- **Full Weather Analysis** optimized for astronomy/stargazing (including moon phase).
 
-![ISS Tracking](https://postimg.cc/rKhFySvb)
+### 👥 Community
+- **Community feed** with posts (text + multi‑image uploads).
+- **Real‑time feed updates** (new posts appear instantly for everyone).
+- **Likes and comments** on posts.
+- **Edit your own posts** (content + optional image replacement).
 
-- Live tracking of the **International Space Station**
-- Orbital paths and future passes
-- Simple, understandable visualizations
+### 🙋 Accounts & Profiles
+- User accounts and profiles.
+- Profile pages at `/profile/:userid`:
+  - Owner‑only profile editing.
+  - “My Posts” section with pagination.
 
----
+### 🖼️ Gallery & Resources
+- **Featured Astrophotography** gallery.
+- **Glossary** and **FAQ** for quick learning.
+- **Community pages** for members and contact.
 
-### 🌌 Astronomy Picture of the Day (APOD)
-
-![APOD](https://postimg.cc/3kR5tVbr)
-
-- NASA’s Astronomy Picture of the Day
-- Clear scientific explanations
-- A new cosmic highlight every day
-
----
-
-### 📅 Astronomical Events
-
-![Astronomical Events](https://postimg.cc/dL9wH8sR)
-
-- Upcoming meteor showers, eclipses, and sky events
-- Clean timelines focused on observation
-- No distractions, just what matters
-
----
-
-### 👥 Community & Accounts
-
-![Community]()
-
-- User accounts and profiles  
-- Community posts and discussions  
-- Share observations, ideas, and discoveries  
-
-Stellara values **meaningful interaction**, not engagement tricks.
+### 🛡️ Safety & Moderation
+- Clear ownership rules for editing posts.
+- Admin‑level tooling for moderation.
 
 ---
 
 ## 🧭 Philosophy
 
-Stellara is guided by a few simple ideas:
-
-- **Science first**  
-  All tools are based on real astronomical data.
-
-- **Calm by design**  
-  Space is slow. The interface respects that.
-
-- **No gamification**  
-  No artificial rewards, streaks, or pressure.
-
-- **Community over virality**  
-  Quality matters more than numbers.
+- **Science first**: built on real data sources.
+- **Calm by design**: minimal clutter, readable UI.
+- **No gamification**: no streaks, pressure, or engagement traps.
+- **Community over virality**: quality > noise.
 
 ---
 
-## 🗺️ Release History
+## 🗺️ Release Highlights
 
-### 🚀 v2.1.1 — January 16, 2026  
-**Critical Authentication Bug Fixes**
-- **Registration Endpoint Simplification**: Removed manual profile insertion logic, now uses only `supabase.auth.signUp()` with automatic database trigger-based profile creation
-- **Login Endpoint Rewrite**: Completely refactored to use only `supabase.auth.signInWithPassword()` - eliminated legacy authentication logic, password hashing, and manual token generation
-- **Architecture Compliance**: Enforced Supabase Auth best practices - user IDs generated only by Supabase, profiles created only by database triggers
-- **Frontend Submission Guards**: Added double submission prevention for both login and registration forms using `isLoggingIn` and `isSubmitting` flags
-- **Session Management**: Standardized session handling with proper access_token and refresh_token storage
-- **Data Flow Optimization**: Simplified authentication flow to eliminate race conditions and 401 Unauthorized errors
+### 🚀 v2.2.x — February 4, 2026
+- Real‑time community feed refresh + improved post creation UX.
+- Profile pages at `/profile/:userid` + “My Posts”.
+- Post editing (owner‑only).
+- Improved media previews (multi‑image `+N` layout) and faster image loading.
 
----
+### 🚀 v2.1.1 — January 16, 2026
+- Critical authentication fixes and more stable session handling.
 
-### 🚀 v2.1.0 — January 15, 2026  
-**Refinement & Stability**
-- Improved performance and responsiveness  
-- Better image analysis accuracy  
-- Visual and UX polishing  
-
----
-
-### 🌌 v2.0.0 — January 10, 2026  
-**Platform Evolution**
-- Complete visual redesign  
-- ISS live tracking introduced  
-- Expanded community features  
-- Foundation for advanced astronomy tools  
-
----
-
-### 🌠 v1.0.0 — October 1, 2025  
-**Initial Release**
-- Core platform launch  
-- First astronomy tools  
-- Community foundations  
-
----
-
-## 🌍 Community
-
-Stellara grows with its users.
-
-You can contribute by:
-- Sharing feedback  
-- Reporting issues  
-- Suggesting features  
-- Participating in discussions  
-
-Respect, curiosity, and inclusivity come first.
-
----
-
-## 📄 License
-
-Stellara is released under the **MIT License**.  
-See the `LICENSE` file for details.
+### 🌌 v2.0.0 — January 10, 2026
+- Platform evolution: ISS tracking, expanded community, and improved tools foundation.
 
 ---
 
@@ -160,11 +92,8 @@ See the `LICENSE` file for details.
 
 ![Cosmic Divider](https://wallpapercave.com/wp/wp13572190.png)
 
-- Open astronomical data providers  
-- The open-source community  
-- Astronomy educators and researchers  
-- Everyone who still looks up at the night sky  
-
----
+- NASA / public astronomy data providers
+- The open‑source community
+- Astronomy educators and researchers
 
 **Stellara — a shared digital observatory.** 🌌
