@@ -57,9 +57,13 @@ Everything is built to let the universe speak for itself.
 - **Glossary** and **FAQ** for quick learning.
 - **Community pages** for members and contact.
 
-### 🛡️ Safety & Moderation
-- Clear ownership rules for editing posts.
-- Admin‑level tooling for moderation.
+### 🛡️ Core Infrastructure & Safety
+- **Enterprise-Grade Rate Limiting**: Anti-brute force mechanisms implemented across public authentication, session bootstrapping, and token refresh endpoints.
+- **Privacy-First Server Logging**: Built-in automated request-body sanitization to mask sensitive user data (passwords, auth tokens) before persistent logging.
+- **Advanced XSS & Injection Mitigation**: Frontend rendering sanitized via a rigid HTML entity whitelist ensuring safe handling of user-generated content.
+- **CORS & Environment Isolation**: Hardened Cross-Origin Resource Sharing logic configured with a strict whitelist mechanism tailored for secure production deployments.
+- **Cookie Security Hardening**: Server-side authentication cookies protected via mandatory `HttpOnly`, `Secure`, and `SameSite=Strict` flag policies.
+- **Dormant Transaction Layer**: Integrated Stripe infrastructure for potential premium features is completely locked and disabled in production, ensuring zero transaction risks for users.
 
 ---
 
@@ -74,6 +78,11 @@ Everything is built to let the universe speak for itself.
 
 ## 🗺️ Release Highlights
 
+### 🚀 v2.5.0 — June 2026
+- **Complete Architecture Hardening**: Deployed robust security updates covering global session protection, advanced rate-limiting, secure server-cookie transport layers, and multi-layered client-side XSS validation.
+- **Global Legal & Privacy Compliance**: Full integration of privacy policies aligned with modern international frameworks (GDPR/CCPA support). Automated session termination mechanisms for expired or recycled tokens.
+- **Experimental Features Lock**: Formally deprecated or locked all incomplete premium/Stellara Pro modules and billing routes to maintain a strictly non-transactional ecosystem.
+
 ### 🚀 v2.2.x — February 4, 2026
 - Real‑time community feed refresh + improved post creation UX.
 - Profile pages at `/profile/:userid` + “My Posts”.
@@ -87,6 +96,14 @@ Everything is built to let the universe speak for itself.
 - Platform evolution: ISS tracking, expanded community, and improved tools foundation.
 
 ---
+
+## ⚖️ Legal Status & Responsibility
+
+Stellara is an **amateur, recreational, and hobbistic personal project** developed and maintained purely out of love for astronomy ("just for the love of the hobby").
+
+- **No Commercial Activity & Premium Feature Lock**: Although the codebase contains experimental structures for a premium tier ('Stellara Pro' via Stripe), these features are entirely locked, non-functional, and disabled. The platform does not process payments, sell services, or conduct any commercial transactions.
+- **Provided "As Is"**: The entire platform, including any locked or visible preview components, is provided strictly 'as is' without guarantees of availability, continuous development, or accuracy.
+- **Limitation of Liability & Waiver of Recourse**: The creator assumes absolutely no civil or criminal liability for any direct or indirect consequences resulting from the use of this hobbyist platform. By using Stellara, you acknowledge its non-commercial state and explicitly waive any right to legal recourse, claims, or court action against the maintainer.
 
 ## 🙏 Acknowledgements
 
