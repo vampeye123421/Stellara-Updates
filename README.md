@@ -45,6 +45,8 @@ Everything is built to let the universe speak for itself.
 - **Real‑time feed updates** (new posts appear instantly for everyone).
 - **Likes and comments** on posts.
 - **Edit your own posts** (content + optional image replacement).
+- **User-created Clubs**: create astronomy clubs, manage membership, host club forum discussions, and browse public club pages.
+  - **Owner-managed Club Polls & Events**: Club owners can create polls or schedule small club events from the owner dashboard. Polls and event metadata are stored in the platform database and votes are recorded per-user; polls are owner-managed and not publicly editable. No additional tracking cookies are used for polls — votes are stored server-side.
 
 ### 🙋 Accounts & Profiles
 - User accounts and profiles.
@@ -101,7 +103,7 @@ Everything is built to let the universe speak for itself.
 
 Stellara is an **amateur, recreational, and hobbistic personal project** developed and maintained purely out of love for astronomy ("just for the love of the hobby").
 
-- **No Commercial Activity & Premium Feature Lock**: Although the codebase contains experimental structures for a premium tier ('Stellara Pro' via Stripe), these features are entirely locked, non-functional, and disabled. The platform does not process payments, sell services, or conduct any commercial transactions.
+- **No Commercial Activity & Premium Feature Lock**: Although the codebase contains experimental structures for a premium tier ('Stellara Pro' via Stripe), these features are entirely locked, non-functional, and disabled. The platform does not process payments, sell services, or conduct any commercial transactions. Clubs, community pages, and group features are active community functionality and are not part of any paid tier.
 - **Provided "As Is"**: The entire platform, including any locked or visible preview components, is provided strictly 'as is' without guarantees of availability, continuous development, or accuracy.
 - **Limitation of Liability & Waiver of Recourse**: The creator assumes absolutely no civil or criminal liability for any direct or indirect consequences resulting from the use of this hobbyist platform. By using Stellara, you acknowledge its non-commercial state and explicitly waive any right to legal recourse, claims, or court action against the maintainer.
 
